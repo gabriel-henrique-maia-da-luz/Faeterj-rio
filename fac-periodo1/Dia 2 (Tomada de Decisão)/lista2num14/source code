@@ -1,0 +1,33 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+//Faça um programa que capture a idade de uma pessoa e
+//exiba a mensagem equivalente: não eleitor, eleitor obrigatório ou eleitor opcional.
+
+//Modifique o programa para que envie uma mensagem aos eleitores opcionais menores de idade
+//sobre a importância de votar.
+
+int main()
+{
+    int idade;
+    
+    printf("Quantos anos você tem? ");
+    scanf("%i", &idade);
+    
+    if (idade<=15) {
+        printf("não eleitor");  
+    } if (idade<=17) {
+        printf("eleitor opcional");
+    } else {
+        printf("eleitor obrigatório");
+    }
+
+    return 0;
+}
