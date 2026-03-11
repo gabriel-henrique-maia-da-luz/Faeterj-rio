@@ -35,3 +35,5 @@ int main(void)
         printf("\n Sua média foi de %d", med);
     }
     
+    return 0;
+}
