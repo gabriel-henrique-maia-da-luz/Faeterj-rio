@@ -29,8 +29,8 @@ int main(void)
         printf("\n Sua quantidade de faltas foi de %d", faltas);
     } else if(med<=6) {
         printf("\n Infelizmente, você repetiu de ano por estar abaixo da média.");
-        printf("\n Sua média foi de %d", med);
-    } else if(med<=6) and (faltas<10) {
+        printf("\n Sua média foi de %f", med);
+    } else if(med<=6 && faltas<10){
         printf("\n Infelizmente, você repetiu de ano por estar abaixo da média.");
         printf("\n Sua média foi de %d", med);
     }
