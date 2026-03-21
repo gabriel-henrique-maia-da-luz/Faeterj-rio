@@ -1,0 +1,49 @@
+
+//Trabalho feito pelo:
+//Gabriel Henrique Maia da Luz
+//Tales Florencio de Farias
+
+
+#include <stdio.h>
+
+int main()
+{
+    //1. Um cinema oferece descontos baseados na idade do cliente e no dia da semana:
+    
+    //Crianças (até 12 anos): 50% desconto
+    //Idosos (60 anos ou mais): 40% desconto
+    
+    //Terça-feira: todos pagam meia-entrada (50% desconto) - maior desconto prevalece
+    
+    //Faça um programa que leia: valor do ingresso, idade do cliente e dia da semana 
+    //(1-segunda a 7-domingo) e exiba o valor final.
+    
+    float valor, tot;
+    int idade, dia;
+    
+    printf("Qual é o valor do ingresso? ");
+    scanf("%f", &valor);
+    
+    printf("Quantos anos você tem? ");
+    scanf("%i", &idade);
+    
+    printf("Qual é o dia da semana(1-segunda a 7-domingo)? ");
+    scanf("%i", &dia);
+    
+    if (dia==2){
+        tot=valor/2;
+        
+    } else if (idade<=12){
+        tot=valor/2;
+        
+    } else if (idade>=60){
+        tot=valor*0.4;
+        
+    } else {
+        tot=valor;
+    }
+    
+    printf("O valor total do ingresso é R$%.2f", tot);
+    
+    return 0;
+}

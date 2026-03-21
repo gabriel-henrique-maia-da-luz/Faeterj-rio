@@ -1,0 +1,63 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+//Exemplo 3 - Calculadora de Frete de E-commerce
+
+//Contexto: Você precisa calcular o custo de envio de pacotes de uma loja virtual. O frete é calculado com
+//base no peso da caixa, na distância percorrida e em uma taxa fixa de despacho. 
+
+//Erro comum: Criar calcularFreteEletronicos(), calcularFreteRoupas(). 
+//O correio não se importa com o que tem dentro da caixa, apenas com o peso e a distância!
+
+
+//Funções Exigidas:
+//1. float calcularFrete(float pesoKg, float distanciaKm, float taxaFixa) - Calcula o valor do frete. A
+//regra de negócio da transportadora é: R$ 0,50 por Km + R$ 2,00 por Kg + a taxa fixa de despacho.
+
+
+//O programa deve:
+//1. Definir uma taxa fixa padrão (ex: R$ 15,00).
+//2. Perguntar o peso total de todos os produtos do carrinho.
+//3. Pedir a distância em Km até a casa do cliente.
+//4. Chamar a função calcularFrete e exibir o valor total do envio.
+
+
+//Por que essa versão é melhor?
+//A lógica de transporte fica isolada da lógica de produtos. Se a loja começar a vender móveis
+//pesados amanhã, o sistema de frete continuará funcionando perfeitamente.
+
+
+
+float calcularFrete(float peso, float km, float taxa){
+    //Calcula o valor do frete. A regra de negócio da transportadora é: 
+    //R$ 0,50 por Km + R$ 2,00 por Kg + a taxa fixa de despacho.
+    
+    float valor= km*0.5 + 2*peso + taxa;
+    
+    return valor;
+}
+
+
+int main()
+{
+    float peso, km, taxa, frete;
+    
+    printf("Digite o peso total de todos os produtos do carrinho: ");
+    scanf("%f", &peso);
+    
+    printf("Digite a distância em Km até a casa: ");
+    scanf("%f", &km);
+    
+    frete=calcularFrete(peso, km, taxa);
+    
+    printf("\nValor do frete: R$%.2f", frete);
+    
+    return 0;
+}

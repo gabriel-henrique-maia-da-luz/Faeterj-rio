@@ -1,0 +1,61 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+//Exemplo 4 - Planejador de Compras para Churrasco
+
+//Contexto: Um aplicativo que ajuda o usuário a fazer a lista de compras para uma festa, evitando desperdícios. 
+
+//Erro comum: Escrever calcularKilosDeCarne(), calcularLitrosDeCerveja(), calcularPacotesDePao().
+
+
+
+//Funções Exigidas:
+//1. float calcularQuantidadeItem(int numeroPessoas, float consumoMedioPorPessoa) -
+//Multiplica as pessoas pela média de consumo e retorna o total necessário para aquele item específico.
+
+
+
+//O programa deve:
+//1. Perguntar quantas pessoas foram convidadas para o churrasco.
+//2. Usar a função calcularQuantidadeItem para os seguintes itens
+
+//      Para carne: passar 0.4 (400g por pessoa).
+//      Para cerveja: passar 1.5 (1,5 litros por pessoa).
+//      Para refrigerante: passar 0.5 (500ml por pessoa).
+
+//3. Imprimir a lista de compras final ("Você vai precisar de X kg de carne, Y litros de cerveja e 
+//Z de refrigerante.").
+
+
+
+//Por que essa versão é melhor?
+//Modularidade pura. Se o usuário quiser adicionar um item novo no cardápio (ex: coraçãozinho de
+//frango), você não precisa criar uma função nova, apenas chamar a existente passando a média de
+//consumo do novo item.
+
+
+
+float calcularQuantidadeItem(int num, float consumoMedio){
+    //Multiplica as pessoas pela média de consumo 
+    //e retorna o total necessário para aquele item específico.
+    
+    
+    
+    return;
+}
+
+
+
+int main()
+{
+    printf("");
+
+    return 0;
+}
